@@ -25,7 +25,7 @@
         })
           .then(animal => {
             setStatus('RENDERING TABLE');
-            renderanimalTable(animal, dataTable);
+            renderAnimalTable(animal, dataTable);
             setStatus('RESPONSE RENDERED INTO TABLE');
         })
           .catch(error => {
@@ -46,7 +46,7 @@
         })
           .then(animal => {
             setStatus('RENDERING TABLE');
-            renderanimalTable([animal], dataTable);
+            renderAnimalTable([animal], dataTable);
             setStatus('RESPONSE RENDERED INTO TABLE');
         })
           .catch(error => {
