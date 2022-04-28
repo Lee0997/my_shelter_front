@@ -49,29 +49,22 @@
         </section>
         <div id="data-table">
             <form id="data-form" class="container">
-                <fieldset id="general-info">
-                    <div class="form-group mt-5">
-                        <label class="name" for="">
-                            <h1>Name of your animal:</h1>
-                        </label>
-                        <input type="text" class="form-control" id="name" placeholder="Enter an Animal's name"
-                            name="name">
-                        <small id="" class="form-text text-muted">We'll drop your animal into the database!</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="species">
-                            <h1>Species</h1>
-                        </label>
-                        <input type="text" class="form-control" id="species"
-                            placeholder="Enter the species of your animal" name="species">
-                    </div>
-                    <div class="form-group">
-                        <label for="gender">
-                            <h1>Gender</h1>
-                        </label>
-                        <input type="gender" class="form-control" id="gender" placeholder="Enter your animal's gender"
-                            name="species">
-                    </div>
+                <fieldset id="general-info form-group mt-5">
+                    <label class="name" for="name">
+                        <h1>Name of your animal:</h1>
+                    </label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter an Animal's name" name="name">
+                    <small id="" class="form-text text-muted">We'll drop your animal into the database!</small>
+                    <label for="species">
+                        <h1>Species</h1>
+                    </label>
+                    <input type="text" class="form-control" id="species" placeholder="Enter the species of your animal"
+                        name="species">
+                    <label for="gender">
+                        <h1>Gender</h1>
+                    </label>
+                    <input type="text" class="form-control" id="gender" placeholder="Enter your animal's gender"
+                        name="gender">
                 </fieldset>
                 <button type="submit" class="btn btn-danger">Create</button>
             </form>

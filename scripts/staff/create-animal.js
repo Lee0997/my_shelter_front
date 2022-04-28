@@ -13,10 +13,11 @@
         
         fetch('http://localhost:8080/animal', {
             method: 'POST',
-            body: JSON.stringify(createAnimalFromFormObj(formDataObject)),
+            body: JSON.stringify(createAnimalFromFormObj(formDataObject), console.log(formDataObject)),
             headers: {
                 'Content-type': 'application/json'
-            }
+            },
+            
         }).then(response => {
             setStatus('RECEIVED RESPONSE');
             if (response.ok) return response.json();
@@ -31,7 +32,6 @@
             handleError(error);
         });
     }
-
     function handleFormSubmission(event) {
         event.preventDefault(); 
         create();
