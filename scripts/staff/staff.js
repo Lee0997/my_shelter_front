@@ -27,5 +27,3 @@ function renderStaffTable(staff, containerElement) {
     const table = tableManager.createTable(staffHeaders, staff);
     containerElement.replaceChildren(table);
 }
-
-function renderAnimalTable(animals,)

@@ -40,6 +40,5 @@
         create();
     }
 
-    // initialise an event listener for submit events on the form
     dataForm.addEventListener('submit', handleFormSubmission);
 })();
