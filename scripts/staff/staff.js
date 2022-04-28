@@ -5,9 +5,8 @@ function Staff(firstName, secondName, role, id = null) {
     this.id = id;
 }
 
-function Animal(name, staff, species, gender, id = null) {
+function Animal(name, species, gender, id = null) {
     this.name = name;
-    this.staff = new Staff(firstName['first-name'], staff.secondName['second-name'], staff.role['role']);
     this.species = species;
     this.gender = gender;
     this.id = id;
@@ -18,7 +17,7 @@ const animalHeaders = ['id', 'staff', 'name', 'species', 'gender']
 
 function renderAnimalTable(animal, containerElement) {
     const tableManager = new TableManager();
-    const table = tableManager.createTable(staffHeaders, animal);
+    const table = tableManager.createTable(animalHeaders, animal);
     containerElement.replaceChildren(table);
 }
 
